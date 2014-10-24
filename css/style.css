@@ -1,0 +1,46 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:300);
+@font-face { 
+font-family: Metropolis;
+  src: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/Metropolis_1920.otf);
+}
+* { box-sizing: border-box; }
+html { 
+  background: linear-gradient(rgba(0,0,0,0.3),#000), url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/coal-mine-beringen.jpg); 
+  color: #fff; 
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+body { 
+  margin: 2rem; 
+  font-family: Roboto Condensed, sans-serif; 
+}
+h1 { 
+  font-family: Metropolis, sans-serif; 
+  text-align: center;
+  font-size: 8rem;
+  margin-top: 2rem;
+}
+div > img { 
+  position: fixed; width: 15%;
+  height: auto; 
+}
+#rightgear { right: 2rem; }
+main { 
+  max-width: 800px;
+  width : 60%;
+  margin: 0 auto;
+  font-size: 2rem; 
+}
+@media all and (max-width: 1000px) {
+  h1 { font-size: 10vw; }
+}
+@media all and (max-width: 800px) {
+  main { font-size: 1.6rem;  }
+}
+@media all and (max-width: 500px) {
+ h1 { font-size: 12vw; }
+ img { display: none; }
+ main { width: 100%; }
+}
+}
